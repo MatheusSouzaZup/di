@@ -21,7 +21,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewMode
     protected void initView() {
         bind = getBinding();
         bind.setViewModel(getViewModel());
-        getViewModel().initScreen();
+        replaceFragment(MainFragment.newInstance(), MainFragment.TAG);
     }
 
 }
